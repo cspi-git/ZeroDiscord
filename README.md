@@ -1,7 +1,9 @@
-<h1 align="center">ZeroDiscord</h1>
-<h4 align="center">A collection of Discord hacks & exploits that is completely made using NodeJS</h4>
+<div align="center">
+    <h1>ZeroDiscord</h1>
+    <h4>A collection of Discord hacks & exploits that is completely made using NodeJS</h4>
+</div>
 
-# Before using any of these tools
+## Before using any of these tools
 First off, all of the tools here are for educational & testing purposes only. Automating your Discord account violates [Discord's Terms of Service](https://discord.com/tos) and can lead to you being ratelimited, disabled, or terminated.
 <br>Do **not** over-use these tools as, again, it will lead to ratelimits, account being disabled, or even terminated.
 
