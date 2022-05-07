@@ -1,0 +1,7 @@
+Note: This takes patient & you must be good at conversation.
+
+1. Make an alt account and make a Discord bot that does what it's general or thingy is and make a command to invite a bot.
+2. Make the server popular, now once your target server has invited your bot & trusted so they give em an administration role.
+3. Make another bot that nukes, use the command to invite the bot then use that bot to nuke the server & make sure to add a code on the bot so whenever anyone joins except you gets kick automatically.
+4. Now the problem here is the owner, If the owner sue the bot just tell him that maybe it got backdoor & say that you will investigate it.
+5. Server nuked! It's risky but fun maybe and persistent too.

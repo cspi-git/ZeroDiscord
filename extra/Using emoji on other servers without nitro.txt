@@ -1,0 +1,9 @@
+Note: This may not work in Discord web version.
+
+1. Install discord & login. https://discord.com/
+2. Join any discord server that has emojis.
+3. Make an empty server for testing & press CTRL+SHIFT+I to open inspect element.
+4. Find "Network"(https://developer.chrome.com/docs/devtools/network/) then press it, click the emojis icon then scroll down for the emoji(GIF, PNG & etc doesn't matter) that you want to use.
+5. Look at the Network requests then find the emoji(GIF, PNG & etc doesn't matter) that you want to use, Click it then on the right side find "Preview" then click it.
+6. Right click on the Image or GIF then click "Copy Image Url".
+7. Paste it in any Discord server channel. :)

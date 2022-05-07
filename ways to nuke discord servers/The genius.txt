@@ -1,0 +1,9 @@
+Try all the other methods of ODiscord "ways to nuke servers"
+
+If they don't work then try some other methods or make a custom method.
+
+First method:
+1. Learn coding languages & website penetration testing.
+2. Gather some information of Discord then use those information to find bugs that can be exploited.
+3. If found a bug that can be exploited to hack any Discord server owner then hack The discord owner account.
+4. Use selfbot nuker. Really complex right?

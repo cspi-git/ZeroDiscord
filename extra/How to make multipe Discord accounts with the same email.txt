@@ -1,0 +1,5 @@
+This works with Yahoo, Protonmail, Gmail, Hotmail, Yandex, Output, Mail & etc.
+
+1. Copy your email go here https://fakedetail.com/fake-mail-generator/gmail and paste it there.
+2. Just pick one email on the results then use it as your email in registering then the verify will be sent in your email the one without . since email checkers/senders ignore . for some reason and that's the cause of it sending the verification code in the original form of the email without knowing.
+3. Have fun.
