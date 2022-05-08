@@ -1,12 +1,15 @@
 <div align="center">
     <h1>ZeroDiscord</h1>
     <h4>A collection of Discord hacks & exploits that is completely made using NodeJS</h4>
-</div>
+
+<br>
 
 ## Before using any of these tools
-First off, all of the tools here are for educational & testing purposes only. Automating your Discord account violates [Discord's Terms of Service](https://discord.com/tos) and can lead to you being ratelimited, disabled, or terminated.
+First off, all of the tools here are for educational & testing purposes only. Automating your Discord account violates [Discord's Terms of Service](https://discord.com/tos) and can lead to you being ratelimited, disabled, or terminated.<br>
 <br>Do **not** over-use these tools as, again, it will lead to ratelimits, account being disabled, or even terminated.
 
+<br>
+    
 ## Tools
 | Name | Description |
 | ---- | ----------- |
@@ -36,5 +39,9 @@ First off, all of the tools here are for educational & testing purposes only. Au
 | userInformationGrabber | Grab's the specified user(ID) information Including account. connections. |
 | webhookSpammer | A really fast webhook message spammer. |
 
+<br> 
+    
 ## License
-MIT © OTAK
+<a href="https://github.com/OTAKKATO/ZeroDiscord/blob/main/LICENSE"> MIT © OTAK </a>
+
+</div>
