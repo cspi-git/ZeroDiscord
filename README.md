@@ -38,6 +38,8 @@ First off, all of the tools here are for educational & testing purposes only. Au
 | tokenStealerSpider | 100% Undetectable Discord token stealer spider. |
 | userInformationGrabber | Grab's the specified user(ID) information Including account. connections. |
 | webhookSpammer | A really fast webhook message spammer. |
+| usersBIOScraper | Scrapes the given Discord users id BIO. |
+| hypeSquadChanger | Account hypesquad changer. |
 
 <br> 
     
