@@ -1,7 +1,6 @@
 <div align="center">
     <h1>ZeroDiscord</h1>
-    <h4>A collection of Discord hacks & exploits that is completely made using NodeJS</h4>
-
+    <h4>A collection of Discord hacks, exploits & tools that is completely made using NodeJS</h4>
 <br>
 
 ## Before using any of these tools
@@ -40,6 +39,8 @@ First off, all of the tools here are for educational & testing purposes only. Au
 | webhookSpammer | A really fast webhook message spammer. |
 | usersBIOScraper | Scrapes the given Discord users id BIO. |
 | hypeSquadChanger | Account hypesquad changer. |
+| purifier | Finds malicious files in your Discord directories, this is really useful If something is happening with your account without you doing or If someone injected a malicious code in your Discord. |
+| channelMessagesImporter | Import messages to a channel from the exported messages from channelMessagesSaver. |
 
 <br> 
     

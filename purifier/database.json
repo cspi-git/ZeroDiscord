@@ -1,0 +1,27 @@
+{
+    "detection": {
+        "texts": [
+            "discord.com/api/",
+            "\"POST\"",
+            "'require(\"fs\")'",
+            "L2FwaS93ZWJob29rcy8=",
+            "users/@me",
+            "dXNlcnMvQG1l",
+            "JSON.stringify(body)"
+        ],
+        "falsePositives": [
+            {
+                "identifier": "discord_desktop_core/core.asar",
+                "rate": "98%"
+            },
+            {
+                "identifier": "/resources/app.asar",
+                "rate": "98%"
+            },
+            {
+                "identifier": "/node_modules/",
+                "rate": "96%"
+            }
+        ]
+    }
+}
