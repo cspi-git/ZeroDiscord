@@ -34,12 +34,19 @@ async function getMessages(){
 
     response = JSON.parse(response.body)
 
-    for( const message of response ) if(message.content) args.importable ? messages.push({ username: message.author.username, avatar: `https://cdn.discordapp.com/avatars/${message.author.id}/${message.author.avatar}`, tag: message.author.discriminator, id: message.author.id, message: message.content }) : messages.push(`[${message.author.username}#${message.author.discriminator}][${message.author.id}][${message.timestamp}] ${message.content}`)
+    try{
+        for( const message of response ) if(message.content) args.importable ? messages.push({ username: message.author.username, avatar: `https://cdn.discordapp.com/avatars/${message.author.id}/${message.author.avatar}`, tag: message.author.discriminator, id: message.author.id, message: message.content }) : messages.push(`[${message.author.username}#${message.author.discriminator}][${message.author.id}][${message.timestamp}] ${message.content}`)
 
-    endMessageID = response[response.length-1].id
+        endMessageID = response[response.length-1].id
 
-    console.log(`${messages.length} messages scraped.`)
-    getMessages()
+        console.log(`${messages.length} messages scraped.`)
+        getMessages()
+    }catch{
+        console.log("Rate limit detected. Retrying after 2 seconds")
+
+        await delay(2000)
+        getMessages()
+    }
 }
 
 //Main
