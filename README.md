@@ -41,6 +41,7 @@ First off, all of the tools here are for educational & testing purposes only. Au
 | hypeSquadChanger | Account hypesquad changer. |
 | purifier | Finds malicious files in your Discord directories, this is really useful If something is happening with your account without you doing or If someone injected a malicious code in your Discord. |
 | channelMessagesImporter | Import messages to a channel from the exported messages from channelMessagesSaver. |
+| discordServerBackup | A simple bot to backup your Discord servers. |
 
 <br> 
     
