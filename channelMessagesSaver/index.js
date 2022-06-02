@@ -11,6 +11,7 @@ const parser = new ArgumentParser()
 
 var messages = []
 var args;
+var timeout = 0
 var endMessageID = 0
 
 // Functions
@@ -41,10 +42,21 @@ async function getMessages(){
 
         console.log(`${messages.length} messages scraped.`)
         getMessages()
-    }catch{
-        console.log("Rate limit detected. Retrying after 2 seconds")
+    }catch(err){
+        if(timeout === 2){
+            console.log("Error detected. Saving current messages.")
 
-        await delay(2000)
+            messages = messages.slice(0, args.amount)
+            args.importable ? fs.writeFileSync(args.output, JSON.stringify(messages, null, 2), "utf8") : fs.writeFileSync(args.output, messages.join("\n"), "utf8")
+
+            console.log("Messages saved.")
+            return console.log(err)
+        }
+
+        console.log("Rate limit detected. Retrying after 4 seconds.")
+
+        timeout++
+        await delay(4000)
         getMessages()
     }
 }
