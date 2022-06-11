@@ -40,11 +40,7 @@ user.on("ready", function(){
             body: JSON.stringify({ custom_status: { text: messages[index] } })
         })
 
-        if(response.statusCode === 200 || response.body.indexOf('"locale":') !== -1){
-            console.log(`Status has been changed to ${messages[index]}`)
-        }else{
-            console.log(`Unable to change status to ${messages[index]}`)
-        }
+        response.statusCode === 200 || response.body.indexOf('"locale":') !== -1 ? console.log(`Status has been changed to ${messages[index]}`) : console.log(`Unable to change status to ${messages[index]}`)
 
         index++
     }, 1000 * args.delay)

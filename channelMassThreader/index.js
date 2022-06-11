@@ -20,6 +20,7 @@ async function createThread(){
         },
         body: JSON.stringify({ name: args.threadName, type: 11, auto_archive_duration: 1440, location: "Thread Browser Toolbar" })
     })
+
     response = response.body
 
     if(response.indexOf('"archived": false') === -1){
@@ -31,6 +32,7 @@ async function createThread(){
 
     console.log("Thread created.")
     await delay(999)
+    
     index++
     if(index === args.amount){
         console.log("Finished!")

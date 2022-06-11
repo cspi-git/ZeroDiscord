@@ -23,7 +23,7 @@ const Oex = {
         904506957447172097, // Bot itself, just incase
         882891618473091082, // I2rys
     ],
-    token: "DiscordBotTokenHere"
+    token: ""
 }
 
 // Main

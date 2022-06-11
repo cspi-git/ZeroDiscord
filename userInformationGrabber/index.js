@@ -28,13 +28,11 @@ Tag number: ${user.discriminator}
 BIO: ${user.bio}
         `)
 
-        for( const connection of connectedAccounts ){
-            console.log(`Platform: ${connection.type}
+        for( const connection of connectedAccounts ) console.log(`Platform: ${connection.type}
 Name: ${connection.name}
 ID: ${connection.id}
 Verified: ${connection.verified}
-`)
-        }
+        `)
     }catch{
         console.log("Make sure the userID & token is valid.")
     }
