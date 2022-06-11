@@ -11,13 +11,13 @@ async function grabServerInformation(){
     try{
         console.log("Grabbing the server information, please wait.")
 
-        var guild = await request(`https://discord.com/api/v6/guilds/${args[0]}`, {
+        var response = await request(`https://discord.com/api/v6/guilds/${args[0]}`, {
             headers: {
                 authorization: args[1]
             }
         })
     
-        guild = JSON.parse(guild.body)
+        response = JSON.parse(response.body)
     
         console.log(`
 Server icon: https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.png

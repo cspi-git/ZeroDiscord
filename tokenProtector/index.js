@@ -22,7 +22,7 @@ const tokenProtector = {
         `${homeDir}\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Local Storage\\leveldb`
     ],
     regex: new RegExp(/(mfa\.[a-z0-9_-]{20,})|([a-z0-9_-]{23,28}\.[a-z0-9_-]{6,7}\.[a-z0-9_-]{27})/, "g"),
-    spiderTime: 10000 //Milliseconds
+    checkEvery: 10000 //Milliseconds
 }
 
 // Functions
@@ -103,17 +103,17 @@ tokenProtector.watch_directory = function(directoryPath){
     }
 }
 
-tokenProtector.spider = async function(){
-    console.log(`[Spider] Discord file spidering will start in ${tokenProtector.spiderTime} milliseconds.`)
-    await delay(tokenProtector.spiderTime)
+tokenProtector.check = async function(){
+    console.log(`Discord files checking will start in ${tokenProtector.checkEvery} milliseconds.`)
+    await delay(tokenProtector.checkEvery)
 
-    console.log("[Spider] Gathering Discord files.")
+    console.log("Gathering Discord files.")
     directoryFiles(`${homeDir}\\AppData\\Roaming\\discord`, function(err, files){
         if(err){
             process.exit()
         }
     
-        console.log("[Spider] Checking Discord files.")
+        console.log("Checking Discord files.")
         files.forEach(file =>{
             var data = Fs.readFileSync(file, "utf8")
             
@@ -122,21 +122,21 @@ tokenProtector.spider = async function(){
 
                 Fs.writeFile(file, data, "utf8", function(err){
                     if(err){
-                        console.log(`[Spider] Unable to remove some Discord tokens in ${file}`)
+                        console.log(`Unable to remove some Discord tokens in ${file}`)
                         return
                     }
 
-                    console.log(`[Spider] Discord tokens in file ${file} has been removed.`)
+                    console.log(`Discord tokens in file ${file} has been removed.`)
                 })
             }
         })
 
-        console.log("[Spider] Spidering is finished.")
-        tokenProtector.spider()
+        console.log("Checking is finished.")
+        tokenProtector.check()
     })
 }
 
 // Main
-tokenProtector.spider()
+tokenProtector.check()
 
 for( const directory of tokenProtector.directoriesToWatch ) tokenProtector.watch_directory(directory)
