@@ -18,20 +18,20 @@ async function grabServerInformation(){
         })
     
         response = JSON.parse(response.body)
-    
+
         console.log(`
-Server icon: https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.png
-Server splash: ${guild.splash}
-Server discovery splash: ${guild.discovery_splash}
-Server id: ${guild.id}
-Server name: ${guild.name}
-Server description: ${guild.description}
-Server vanity: ${guild.vanity_url_code}
-Server owner id: ${guild.owner_id}
-Server verification level: ${guild.verification_level}
-Server emojis amount: ${guild.emojis.length}
-Server stickers amount: ${guild.stickers.length}
-Server roles amount: ${guild.roles.length}
+Server icon: https://cdn.discordapp.com/icons/${response.id}/${response.icon}.png
+Server splash: ${response.splash}
+Server discovery splash: ${response.discovery_splash}
+Server id: ${response.id}
+Server name: ${response.name}
+Server description: ${response.description}
+Server vanity: ${response.vanity_url_code}
+Server owner id: ${response.owner_id}
+Server verification level: ${response.verification_level}
+Server emojis amount: ${response.emojis.length}
+Server stickers amount: ${response.stickers.length}
+Server roles amount: ${response.roles.length}
 Finished!`)
     }catch{
         console.log("Invalid token/guildId.")
