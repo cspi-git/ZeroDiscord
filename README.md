@@ -48,6 +48,6 @@ First off, all of the tools here are for educational & testing purposes only. Au
 <br> 
     
 ## License
-<a href="https://github.com/OTAKKATO/ZeroDiscord/blob/main/LICENSE"> MIT © OTAK </a>
+<a href="https://github.com/hanaui-git/ZeroDiscord/blob/main/LICENSE"> MIT © Hanaui </a>
 
 </div>
