@@ -26,7 +26,6 @@ async function createThread(){
     if(response.indexOf('"archived": false') === -1){
         console.log("Unable to create thread, retrying in 2 seconds.")
         await delay(2000)
-
         return createThread()
     }
 

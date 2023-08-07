@@ -17,6 +17,4 @@ const webhookToken = reconstructWL[6]
 const webhook = new discord.WebhookClient(webhookID, webhookToken)
 
 console.log("Spammer has started.")
-setInterval(function(){
-    webhook.send(args.slice(1).join(" "))
-}, 100)
+setInterval(()=>{webhook.send(args.slice(1).join(" "))}, 100)

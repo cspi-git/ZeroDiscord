@@ -31,9 +31,7 @@ bot.on("message", async(message)=>{
 
     if(message.content === "dsb.backup"){
         message.reply("Saving the server, please wait.")
-        discordBackup.create(guild).then((backupID)=>{
-            message.reply(`Server successfully saved. ID: ${backupID.id}`)
-        })
+        discordBackup.create(guild).then((backupID)=>{message.reply(`Server successfully saved. ID: ${backupID.id}`)})
     }else if(messageArgs[0] === "dsb.restore"){
         const backupID = messageArgs[1]
         const backups = await discordBackup.list()

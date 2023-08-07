@@ -36,6 +36,7 @@ async function spam(){
     console.log("Junk log sent.")
     await delay(999)
     index++
+
     if(index === args.amount){
         console.log("Finished!")
         process.exit()
@@ -51,6 +52,4 @@ args = parser.parse_args()
 args.amount = args.amount-1
 
 console.log("Sending the junk logs, please wait.")
-for( let i = 0; i <= args.amount; i++ ){
-    spam()
-}
+for( let i = 0; i <= args.amount; i++ ) spam()

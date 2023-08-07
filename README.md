@@ -7,8 +7,6 @@
 First off, all of the tools here are for educational & testing purposes only. Automating your Discord account violates [Discord's Terms of Service](https://discord.com/tos) and can lead to you being ratelimited, disabled, or terminated.<br>
 <br>Do **not** over-use these tools as, again, it will lead to ratelimits, account being disabled, or even terminated.
 
-<br>
-    
 ## Tools
 | Name | Description | OS |
 | ---- | ----------- | -- |
@@ -19,8 +17,8 @@ First off, all of the tools here are for educational & testing purposes only. Au
 | channelMassThreader | A channel mass threader or a channel flooder via threads. | Windows, Mac & etc |
 | channelMessagesSaver | Saves specific amount of messages of a Discord channel. | Windows, Mac & etc |
 | corruptor | Corrupts your Discord. | Windows |
-| demonstrations/bypassDiscordChatLimit | Simple demonstration to bypass Discord chat limit(Kinda). | Windows, Mac & etc |
-| disabler | Discord account disabler. | Windows, Mac & etc |
+| demonstrations/bypassDiscordChatLimit | Simple demonstration to bypass Discord chat limit (Kinda). | Windows, Mac & etc |
+| disabler (Patched) | Discord account disabler. | Windows, Mac & etc |
 | invisibleMention | Mention the specified user invisibly. | Windows, Mac & etc |
 | inviteCodeServerInfo | Discord server invite code server information grabber. | Windows, Mac & etc |
 | keylogger | 100% undetectable keylogger. | Windows |
@@ -35,7 +33,7 @@ First off, all of the tools here are for educational & testing purposes only. Au
 | tokenProtector | A simple but effective Discord token protector. | Windows |
 | tokenStealer | 100% Undetectable Discord token stealer. | Windows |
 | tokenStealerSpider | 100% Undetectable Discord token stealer spider. | Windows |
-| userInformationGrabber | Grab's the specified user(ID) information Including account connections. | Windows, Mac & etc |
+| userInformationGrabber | Grab's the specified user (ID) information Including account connections. | Windows, Mac & etc |
 | webhookSpammer | A really fast webhook message spammer. | Windows, Mac & etc |
 | usersBIOScraper | Scrapes the given Discord users id BIO. | Windows, Mac & etc |
 | hypeSquadChanger | Account hypesquad changer. | Windows, Mac & etc |
@@ -43,11 +41,9 @@ First off, all of the tools here are for educational & testing purposes only. Au
 | channelMessagesImporter | Import messages to a channel from the exported messages from channelMessagesSaver. | Windows, Mac & etc |
 | discordServerBackup | A simple bot to backup your Discord servers. | Windows, Mac & etc |
 | Oex | Just a nuker that aims for SPEED. | Windows, Mac & etc |
-| DCEImporter | DiscordChatExporter exported messsages(JSON) importer. | Windows, Mac & etc |
-
-<br> 
+| DCEImporter | DiscordChatExporter exported messsages (JSON) importer. | Windows, Mac & etc |
     
 ## License
-<a href="https://github.com/hanaui-git/ZeroDiscord/blob/main/LICENSE"> MIT © Hanaui </a>
+<a href="https://github.com/hanaui-git/ZeroDiscord/blob/main/LICENSE"> MIT © CSPI </a>
 
 </div>

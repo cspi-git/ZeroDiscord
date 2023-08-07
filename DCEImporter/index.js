@@ -27,11 +27,7 @@ async function importMessages(){
         if(response.hasOwnProperty("retry_after")){
             console.log(`Retrying after ${response.retry_after} ms`)
     
-            setTimeout(function(){
-                importMessages()
-            }, response.retry_after)
-            
-            return
+            return setTimeout(function(){importMessages()}, response.retry_after)
         }
     }catch{}
 

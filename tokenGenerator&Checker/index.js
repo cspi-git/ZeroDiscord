@@ -74,11 +74,7 @@ async function generatorChecker(){
 
         const data = fs.readFileSync(args[0], "utf8")
 
-        if(!data.length){
-            fs.writeFileSync(args[0], mfaToken, "utf8")
-        }else{
-            fs.writeFileSync(args[0], `${data}\n${mfaToken}`, "utf8")
-        }
+        data.length ? fs.writeFileSync(args[0], `${data}\n${mfaToken}`, "utf8") : fs.writeFileSync(args[0], mfaToken, "utf8")
     }else{
         console.log(chalk.redBright(`Invalid token: ${mfaToken}`))
     }
@@ -94,11 +90,7 @@ async function generatorChecker(){
 
         const data = fs.readFileSync(args[0], "utf8")
 
-        if(!data.length){
-            fs.writeFileSync(args[0], notMFAToken, "utf8")
-        }else{
-            fs.writeFileSync(args[0], `${data}\n${notMFAToken}`, "utf8")
-        }
+        data.length ? fs.writeFileSync(args[0], `${data}\n${notMFAToken}`, "utf8") : fs.writeFileSync(args[0], notMFAToken, "utf8")
     }else{
         console.log(chalk.redBright(`Invalid token: ${notMFAToken}`))
     }

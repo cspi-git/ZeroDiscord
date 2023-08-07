@@ -5,10 +5,10 @@ const chokidar = require("chokidar")
 const delay = require("delay")
 const path = require("path")
 const os = require("os")
-const Fs = require("fs")
+const fs = require("fs")
 
 // Startup
-if(!Fs.existsSync(`C:\\Users\\${os.userInfo().username}\\AppData\\Roaming\\discord`)){
+if(!fs.existsSync(`C:\\Users\\${os.userInfo().username}\\AppData\\Roaming\\discord`)){
     console.log("It seems like you don't have Discord installed in your PC.")
     process.exit()
 }
@@ -29,7 +29,7 @@ const tokenProtector = {
 function directoryFiles(dir, done) {
     var results = []
 
-    Fs.readdir(dir, function (err, list) {
+    fs.readdir(dir, function (err, list) {
         if (err) return done(err)
 
         var list_length = list.length
@@ -39,16 +39,14 @@ function directoryFiles(dir, done) {
         list.forEach(function (file) {
             file = path.resolve(dir, file)
 
-            Fs.stat(file, function (err, stat) {
+            fs.stat(file, function (err, stat) {
                 if (stat && stat.isDirectory()) {
                     directoryFiles(file, function (err, res) {
                         results = results.concat(res)
-
                         if (!--list_length) done(null, results)
                     })
                 } else {
                     results.push(file)
-                    
                     if (!--list_length) done(null, results)
                 }
             })
@@ -57,18 +55,15 @@ function directoryFiles(dir, done) {
 }
 
 tokenProtector.tokensRemover = function(filePath){
-    Fs.readFile(filePath, "utf8", function(err, data){
-        if(err){
-            console.log(`Unable to read file ${filePath}`)
-            return
-        }
+    fs.readFile(filePath, "utf8", function(err, data){
+        if(err) return console.log(`Unable to read file ${filePath}`)
 
         if(data.match(tokenProtector.regex)){
             console.log(`Tokens found in file ${filePath}`)
     
             data = data.replace(tokenProtector.regex, "")
     
-            Fs.writeFileSync(filePath, data, "utf8")
+            fs.writeFileSync(filePath, data, "utf8")
             console.log(`Tokens in file ${filePath} are removed.`)
         }else{
             console.log(`No tokens found in file ${filePath}`)
@@ -77,30 +72,24 @@ tokenProtector.tokensRemover = function(filePath){
 }
 
 tokenProtector.watch_directory = function(directoryPath){
-    if(!Fs.existsSync(directoryPath)){
-        console.log(`Directory path ${directoryPath} doesn't exist, therefore skipping the directory.`)
-        return
-    }
+    if(!fs.existsSync(directoryPath)) return console.log(`Directory path ${directoryPath} doesn't exist, therefore skipping the directory.`)
 
     console.log(`Watching directory ${directoryPath}`)
 
-    const directoryFiles = Fs.readdirSync(directoryPath, "utf8")
+    const directoryFiles = fs.readdirSync(directoryPath, "utf8")
     const directoryWatcher = chokidar.watch(directoryPath, {
         awaitWriteFinish: true
     })
 
     directoryWatcher.on("change", (path)=>{
         console.log(`Changes detected in file ${path}`)
-
         console.log(`Checking any tokens in file ${path}`)
         tokenProtector.tokensRemover(path)
     })
 
     console.log(`Checking directory ${directoryPath} files for any tokens.`)
 
-    for( const file of directoryFiles ){
-        tokenProtector.tokensRemover(`${directoryPath}\\${file}`)
-    }
+    for( const file of directoryFiles ) tokenProtector.tokensRemover(`${directoryPath}\\${file}`)
 }
 
 tokenProtector.check = async function(){
@@ -109,22 +98,17 @@ tokenProtector.check = async function(){
 
     console.log("Gathering Discord files.")
     directoryFiles(`${homeDir}\\AppData\\Roaming\\discord`, function(err, files){
-        if(err){
-            process.exit()
-        }
+        if(err) return process.exit()
     
         console.log("Checking Discord files.")
         files.forEach(file =>{
-            var data = Fs.readFileSync(file, "utf8")
+            var data = fs.readFileSync(file, "utf8")
             
             if(data.match(tokenProtector.regex)){
                 data = data.replace(tokenProtector.regex)
 
-                Fs.writeFile(file, data, "utf8", function(err){
-                    if(err){
-                        console.log(`Unable to remove some Discord tokens in ${file}`)
-                        return
-                    }
+                fs.writeFile(file, data, "utf8", function(err){
+                    if(err) return console.log(`Unable to remove some Discord tokens in ${file}`)
 
                     console.log(`Discord tokens in file ${file} has been removed.`)
                 })
