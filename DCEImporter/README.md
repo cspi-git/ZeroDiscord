@@ -1,5 +1,5 @@
 # DCEImporter
-DiscordChatExporter exported messsages(JSON) importer.
+DiscordChatExporter exported messsages (JSON) importer.
 
 ## Installation
 NpmJS:
@@ -13,4 +13,4 @@ node index.js <webhookLink> <messages>
 ```
 
 - webhookLink - The webhook link to use.
-- message - The file that contains messages exported using "DiscordChatExporter"(JSON).
+- message - The file that contains messages exported using "DiscordChatExporter" (JSON).

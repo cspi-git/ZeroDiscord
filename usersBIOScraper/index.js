@@ -25,18 +25,15 @@
                 authorization: args[1]
             }
         })
+        
         response = JSON.parse(response.body)
-
         if(response.hasOwnProperty("errors")) return console.log(`Invalid id detected. ${id}`)
-
         response = response.user
-
         results.push(`Username: ${response.username}\nID: ${id}\nBIO:\n${response.bio}\n`)
         console.log(`Successfully grabbed ${id} bio.`)
     }
 
     console.log("Saving the results, please wait.")
     fs.writeFileSync(args[2], results.join("\n===========================\n\n"), "utf8")
-
     console.log("Finished!")
 }())

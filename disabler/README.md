@@ -1,4 +1,4 @@
-# disabler
+# disabler (Patched)
 Discord account disabler.
 
 ## Installation

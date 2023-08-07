@@ -1,5 +1,5 @@
 # bypassDiscordChatLimit
-Simple demonstration to bypass Discord chat limit(Kinda).
+Simple demonstration to bypass Discord chat limit (Kinda).
 
 ## Usage
 ```
