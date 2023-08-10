@@ -2,7 +2,7 @@
 
 // Dependencies
 const { ArgumentParser } = require("argparse") 
-const discord = require("discord.js-selfbot")
+const discord = require("discord.js-selfbot-v13")
 const request = require("request-async")
 const delay = require("delay")
 const fs = require("fs")

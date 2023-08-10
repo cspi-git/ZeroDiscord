@@ -1,7 +1,7 @@
 "use strict";
 
 // Dependencies
-const discord = require("discord.js-selfbot")
+const discord = require("discord.js-selfbot-v13")
 
 // Variables
 const token = process.argv.slice(2)[0]

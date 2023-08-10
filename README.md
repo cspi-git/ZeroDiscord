@@ -42,8 +42,10 @@ First off, all of the tools here are for educational & testing purposes only. Au
 | discordServerBackup | A simple bot to backup your Discord servers. | Windows, Mac & etc |
 | Oex | Just a nuker that aims for SPEED. | Windows, Mac & etc |
 | DCEImporter | DiscordChatExporter exported messsages (JSON) importer. | Windows, Mac & etc |
-    
+| serverUPD | Server members profile pictures downloader. | Windows, Mac & etc |
+| serverMBS | Server members bio scraper. | Windows, Mac & etc |
+
 ## License
-<a href="https://github.com/hanaui-git/ZeroDiscord/blob/main/LICENSE"> MIT © CSPI </a>
+<a href="https://github.com/cspi-git/ZeroDiscord/blob/main/LICENSE"> MIT © CSPI </a>
 
 </div>
