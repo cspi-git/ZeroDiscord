@@ -4,7 +4,7 @@ A simple code that runs your Discord account 24/7
 ## Installation
 NpmJS:
 ```
-npm i discord.js-selfbot
+npm i discord.js-selfbot-v13
 ```
 
 ## Usage
