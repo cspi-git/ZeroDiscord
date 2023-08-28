@@ -65,7 +65,7 @@ async function getMessages(){
 parser.add_argument("-ci", "--channelID", { help: "The target channel ID.", required: true })
 parser.add_argument("-a", "--amount", { help: "The amount of messages to save.", required: true })
 parser.add_argument("-o", "--output", { help: "The output file in where to save the messages.", required: true })
-parser.add_argument("-i", "--importable", { help: 'If "-i/--importable" value is true then the output will be saved in JSON that can be imported to a channel using "channelMessagesImporter".' })
+parser.add_argument("-j", "--JsonFormatting", { help: 'If "-j/--JsonFormatting" value is true then the output will be saved in JSON that can be imported to a channel using "channelMessagesImporter".' })
 parser.add_argument("-t", "--token", { help: "Discord account token to use.", required: true })
 
 args = parser.parse_args()
