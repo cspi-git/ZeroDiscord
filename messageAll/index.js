@@ -2,6 +2,7 @@
 
 // Dependencies
 const discord = require("discord.js-selfbot-v13")
+// npm i discord.js-selfbot-v13
 
 // Variables
 const token = process.argv.slice(2)[0]
@@ -9,6 +10,9 @@ const user = new discord.Client()
 
 // Main
 if(!token) return console.log("usage: node index.js <token>")
+if (token.includes("<") || token.includes(">")) {
+    token.replace("<", "").replace(">", "")
+}
 
 user.on("ready", ()=>{ 
     console.log("Selfbot is running.")

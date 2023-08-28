@@ -4,8 +4,10 @@
 const request = require("request-async")
 const jsonHood = require("json-hood")
 
+// npm i request-async json-hood
+
 // Variables
-const inviteCode = process.argv.slice(2)[0]
+let inviteCode = process.argv.slice(2)[0]
 
 // Functions
 async function getInviteCodeInformation(){
@@ -17,5 +19,10 @@ async function getInviteCodeInformation(){
 
 // Main
 if(!inviteCode) return console.log("usage: node index.js <inviteCode>")
+
+// If user gives a link, remove the link and keep the invite code
+inviteCode = inviteCode.replace(/(https?:\/\/)?(www\.)?(discord\.gg|discord\.com\/invite)\//, "")
+
+// console.log("Trying code:" + inviteCode)
 
 getInviteCodeInformation()
