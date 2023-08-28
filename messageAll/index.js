@@ -2,6 +2,7 @@
 
 // Dependencies
 const discord = require("discord.js-selfbot-v13")
+// npm i discord.js-selfbot-v13
 
 // Variables
 const token = process.argv.slice(2)[0]
