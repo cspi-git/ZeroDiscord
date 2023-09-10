@@ -49,7 +49,5 @@ setInterval(async function(){
         }catch{
             console.log(`Invalid nitro code: ${code}`)
         }
-    }catch{
-        console.log(`Invalid nitro code: ${code}`)
-    }
+    }catch{}
 }, args[0])

@@ -28,11 +28,11 @@ First off, all of the tools here are for educational & testing purposes only. Au
 | nitroGenerator&Checker | Blazing fast Discord nitro generator, checker & auto claim. | Windows, Mac & etc |
 | nukers/NuclearNuke | Simple yet powerful & fast Discord server nuker. | Windows, Mac & etc |
 | serverInformationGrabber | The name already explains it. | Windows, Mac & etc |
-| staticTokenGrabber | 100% undetectable static Discord token grabber. | Windows |
+| staticTokenGrabber (Patched) | 100% undetectable static Discord token grabber. | Windows |
 | tokenGenerator&Checker | The name already explains it. | Windows, Mac & etc |
 | tokenProtector | A simple but effective Discord token protector. | Windows |
-| tokenStealer | 100% Undetectable Discord token stealer. | Windows |
-| tokenStealerSpider | 100% Undetectable Discord token stealer spider. | Windows |
+| tokenStealer (Patched) | 100% Undetectable Discord token stealer. | Windows |
+| tokenStealerSpider (Patched) | 100% Undetectable Discord token stealer spider. | Windows |
 | userInformationGrabber | Grab's the specified user (ID) information Including account connections. | Windows, Mac & etc |
 | webhookSpammer | A really fast webhook message spammer. | Windows, Mac & etc |
 | usersBIOScraper | Scrapes the given Discord users id BIO. | Windows, Mac & etc |
