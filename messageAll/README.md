@@ -4,7 +4,7 @@ Send's your desire message to everyone in the current server.
 ## Installation
 NpmJS:
 ```
-npm i discord.js-selfbot
+npm i discord.js-selfbot-v13
 ```
 
 ## Usage

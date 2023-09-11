@@ -21,7 +21,7 @@ user.on("ready", ()=>{
 user.on("message", (message)=>{
     const messageArgs = message.content.split(" ")
 
-    if(message.author.id == User.user.id){
+    if(message.author.id == user.user.id){
         if(messageArgs[0] === "M$messageall"){
             message.delete()
 
