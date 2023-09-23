@@ -10,6 +10,7 @@ First off, all of the tools here are for educational & testing purposes only. Au
 ## Tools
 | Name | Description | OS |
 | ---- | ----------- | -- |
+| massAddFriend | Send mass friend requests to server members. | Windows, Mac & etc |
 | 247Account | A simple code that runs your Discord account 24/7 | Windows, Mac & etc |
 | aioDiscordSniper | A fast, flexible & extensible Discord sniper. | Windows, Mac & etc |
 | auditLogFlooder | Flood any Discord server audit log by sending junk invite links. | Windows, Mac & etc |
