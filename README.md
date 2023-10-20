@@ -10,41 +10,42 @@ First off, all of the tools here are for educational & testing purposes only. Au
 ## Tools
 | Name | Description | OS |
 | ---- | ----------- | -- |
-| massAddFriend | Send mass friend requests to server members. | Windows, Mac & etc |
-| 247Account | A simple code that runs your Discord account 24/7 | Windows, Mac & etc |
-| aioDiscordSniper | A fast, flexible & extensible Discord sniper. | Windows, Mac & etc |
-| auditLogFlooder | Flood any Discord server audit log by sending junk invite links. | Windows, Mac & etc |
-| automaticStatusMessageChanger | The name already explains it. | Windows, Mac & etc |
-| channelMassThreader | A channel mass threader or a channel flooder via threads. | Windows, Mac & etc |
-| channelMessagesSaver | Saves specific amount of messages of a Discord channel. | Windows, Mac & etc |
+| massAddFriend | Send mass friend requests to server members. | Any |
+| 247Account | A simple code that runs your Discord account 24/7 | Any |
+| aioDiscordSniper | A fast, flexible & extensible Discord sniper. | Any |
+| auditLogFlooder | Flood any Discord server audit log by sending junk invite links. | Any |
+| automaticStatusMessageChanger | The name already explains it. | Any |
+| channelMassThreader | A channel mass threader or a channel flooder via threads. | Any |
+| channelMessagesSaver | Saves specific amount of messages of a Discord channel. | Any |
 | corruptor | Corrupts your Discord. | Windows |
-| demonstrations/bypassDiscordChatLimit | Simple demonstration to bypass Discord chat limit (Kinda). | Windows, Mac & etc |
-| disabler (Patched) | Discord account disabler. | Windows, Mac & etc |
-| invisibleMention | Mention the specified user invisibly. | Windows, Mac & etc |
-| inviteCodeServerInfo | Discord server invite code server information grabber. | Windows, Mac & etc |
+| demonstrations/bypassDiscordChatLimit | Simple demonstration to bypass Discord chat limit (Kinda). | Any |
+| disabler (Patched) | Discord account disabler. | Any |
+| invisibleMention | Mention the specified user invisibly. | Any |
+| inviteCodeServerInfo | Discord server invite code server information grabber. | Any |
 | keylogger | 100% undetectable keylogger. | Windows |
-| massWebhooksDeleter | Mass webhooks deleter. | Windows, Mac & etc |
-| messageAll | Send's your desire message to everyone in the current server. | Windows, Mac & etc |
-| multiLineSpammer | Spams a lot's of new lines in the specified Discord server channel. | Windows, Mac & etc |
-| nitroGenerator&Checker | Blazing fast Discord nitro generator, checker & auto claim. | Windows, Mac & etc |
-| nukers/NuclearNuke | Simple yet powerful & fast Discord server nuker. | Windows, Mac & etc |
-| serverInformationGrabber | The name already explains it. | Windows, Mac & etc |
+| massWebhooksDeleter | Mass webhooks deleter. | Any |
+| messageAll | Send's your desire message to everyone in the current server. | Any |
+| multiLineSpammer | Spams a lot's of new lines in the specified Discord server channel. | Any |
+| nitroGenerator&Checker | Blazing fast Discord nitro generator, checker & auto claim. | Any |
+| nukers/NuclearNuke | Simple yet powerful & fast Discord server nuker. | Any |
+| serverInformationGrabber | The name already explains it. | Any |
 | staticTokenGrabber (Patched) | 100% undetectable static Discord token grabber. | Windows |
-| tokenGenerator&Checker | The name already explains it. | Windows, Mac & etc |
+| tokenGenerator&Checker | The name already explains it. | Any |
 | tokenProtector | A simple but effective Discord token protector. | Windows |
 | tokenStealer (Patched) | 100% Undetectable Discord token stealer. | Windows |
 | tokenStealerSpider (Patched) | 100% Undetectable Discord token stealer spider. | Windows |
-| userInformationGrabber | Grab's the specified user (ID) information Including account connections. | Windows, Mac & etc |
-| webhookSpammer | A really fast webhook message spammer. | Windows, Mac & etc |
-| usersBIOScraper | Scrapes the given Discord users id BIO. | Windows, Mac & etc |
-| hypeSquadChanger | Account hypesquad changer. | Windows, Mac & etc |
+| userInformationGrabber | Grab's the specified user (ID) information Including account connections. | Any |
+| webhookSpammer | A really fast webhook message spammer. | Any |
+| usersBIOScraper | Scrapes the given Discord users id BIO. | Any |
+| hypeSquadChanger | Account hypesquad changer. | Any |
 | purifier | Finds malicious files in your Discord directories, this is really useful If something is happening with your account without you doing or If someone injected a malicious code in your Discord. | Windows |
-| channelMessagesImporter | Import messages to a channel from the exported messages from channelMessagesSaver. | Windows, Mac & etc |
-| discordServerBackup | A simple bot to backup your Discord servers. | Windows, Mac & etc |
-| Oex | Just a nuker that aims for SPEED. | Windows, Mac & etc |
-| DCEImporter | DiscordChatExporter exported messsages (JSON) importer. | Windows, Mac & etc |
-| serverUPD | Server members profile pictures downloader. | Windows, Mac & etc |
-| serverMBS | Server members bio scraper. | Windows, Mac & etc |
+| channelMessagesImporter | Import messages to a channel from the exported messages from channelMessagesSaver. | Any |
+| serverMI | Server members id scraper. | Any |
+| discordServerBackup | A simple bot to backup your Discord servers. | Any |
+| Oex | Just a nuker that aims for SPEED. | Any |
+| DCEImporter | DiscordChatExporter exported messsages (JSON) importer. | Any |
+| serverUPD | Server members profile pictures downloader. | Any |
+| serverMBS | Server members bio scraper. | Any |
 
 ## License
 <a href="https://github.com/cspi-git/ZeroDiscord/blob/main/LICENSE"> MIT © CSPI </a>
