@@ -46,6 +46,7 @@ First off, all of the tools here are for educational & testing purposes only. Au
 | DCEImporter | DiscordChatExporter exported messsages (JSON) importer. | Any |
 | serverUPD | Server members profile pictures downloader. | Any |
 | serverMBS | Server members bio scraper. | Any |
+| massDM | Better messageAll with 1 sec delay every DM. | Any |
 
 ## License
 <a href="https://github.com/cspi-git/ZeroDiscord/blob/main/LICENSE"> MIT © CSPI </a>
