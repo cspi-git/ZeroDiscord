@@ -47,6 +47,7 @@ First off, all of the tools here are for educational & testing purposes only. Au
 | serverUPD | Server members profile pictures downloader. | Any |
 | serverMBS | Server members bio scraper. | Any |
 | massDM | Better messageAll with 1 sec delay every DM. | Any |
+| purgeSEmojis | Easily purge your Discord server emojis with one command. | Any |
 
 ## License
 <a href="https://github.com/cspi-git/ZeroDiscord/blob/main/LICENSE"> MIT © CSPI </a>
